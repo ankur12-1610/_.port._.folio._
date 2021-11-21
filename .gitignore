@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+package.json/
+tsconfig.json/
+vite.config.ts/
+yarn.lock/
