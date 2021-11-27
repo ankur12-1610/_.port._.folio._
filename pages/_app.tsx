@@ -6,6 +6,7 @@ import { Footer } from '../components/footer'
 import { ThemeProvider } from 'next-themes'
 import { Cintro } from '../components/cintro'
 import { About } from '../components/about'
+import { Projects } from '../components/projects'
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <NavBar />
       <Cintro />
       <About />
+      <Projects />
       <Component {...pageProps} />
       <Footer />
     </ThemeProvider>

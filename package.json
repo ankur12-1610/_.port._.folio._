@@ -17,7 +17,8 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
     "react-is-mounted-hook": "^1.1.2",
-    "react-use": "^17.3.1"
+    "react-use": "^17.3.1",
+    "tailwindcss-border-gradient-radius": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "16.11.9",
