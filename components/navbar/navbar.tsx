@@ -48,7 +48,7 @@ export function NavBar() {
                 <div className="hidden sm:block lg:pl-20 lg:ml-20 md:ml-20 sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link href={item.href} key={item.name} passHref>
+                      <Link href={item.href} key={item.name} replace>
                       <a
                         target="_blank"
                         className={classNames(

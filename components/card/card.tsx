@@ -7,8 +7,8 @@ export function Card(props: any) {
   const { title, image, description, tags, key, height, width, link } = props;
 
   return (
-<div className="flex flex-wrap place-items-center h-screen lg:mr-6 lg:-mb-48 md:-mb-48">
-    <div className="overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-5 hover:shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto border-gradient-br-blue-orange-gray-50 dark:border-gradient-br-blue-orange-bl border-transparent border-solid border-4 rounded-xl">
+<div className="flex flex-wrap place-items-center h-screen/2 lg:mr-6 md:mb-5 ">
+    <div className="overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-5 hover:shadow-2xl rounded-lg h-90 w-63 md:w-80 cursor-pointer m-auto border-gradient-br-blue-orange-gray-50 dark:border-gradient-br-blue-orange-bl border-transparent border-solid border-4 rounded-xl mb-5 mt-10">
             <Link href={link} passHref>
               <a>
             <Image alt={title} src={image} priority={true} height={height} width={width} className="dark:bg-white" />
