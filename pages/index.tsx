@@ -8,6 +8,7 @@ import { Footer } from '../components/footer'
 import { NavBar } from '../components/navbar'
 import { Skills } from '../components/skills'
 import { ThemeProvider } from 'next-themes'
+import { ProgressBar } from '../components/progressBar'
 
 const Home: NextPage = () => {
 
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <meta name="description" content="itsankur.tech" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
+        <ProgressBar/>
         <NavBar />
         <Cintro />
         <About />

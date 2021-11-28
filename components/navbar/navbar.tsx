@@ -6,6 +6,7 @@ import { ToggleButton } from '../toggleButton/toggleButton'
 import Image from 'next/image'
 import logo from "../../images/logo.svg"
 import { useRouter } from 'next/router'
+import { ProgressBar } from '../progressBar'
 
 const navigation = [
   { name: 'About', link: '/', current: false },
@@ -24,7 +25,8 @@ export function NavBar() {
 
   
   return (
-      <>
+    <>
+    <ProgressBar/>
     <Disclosure as="nav" className="sticky top-0 py-2 z-10 bg-white-700 dark:bg-black-700 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90 border-b border-gray-250 dark:border-gray-600">
       {({ open }) => (
         <>
