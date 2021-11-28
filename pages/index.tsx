@@ -6,6 +6,7 @@ import { Cintro } from '../components/cintro'
 import { About } from '../components/about'
 import { Footer } from '../components/footer'
 import { NavBar } from '../components/navbar'
+import { Skills } from '../components/skills'
 import { ThemeProvider } from 'next-themes'
 
 const Home: NextPage = () => {
@@ -22,7 +23,8 @@ const Home: NextPage = () => {
         <NavBar />
         <Cintro />
         <About />
-        <div className="-mt-20">
+        <Skills />
+        <div className="mt-6">
         <Footer />
         </div>
     </ThemeProvider>

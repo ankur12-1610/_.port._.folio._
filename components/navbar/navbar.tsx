@@ -43,11 +43,15 @@ export function NavBar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
+                <Link href="/" passHref>
+                <a>
                   <Image
                     className="hidden lg:block h-4 w-auto"
                     src={logo}
                     alt="Workflow"
                   />
+                </a>
+                </Link>
                 </div>
                 <div className="hidden sm:block lg:pl-20 lg:ml-20 md:ml-20 sm:ml-6">
                   <div className="flex space-x-4">
