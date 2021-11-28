@@ -55,6 +55,9 @@ module.exports = {
         fontSize: {
           '1xl': '1.5rem',
         },
+        width: {
+          'lg': '280px',
+        }
     },
   },
   variants: {
