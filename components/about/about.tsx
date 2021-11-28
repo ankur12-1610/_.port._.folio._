@@ -30,7 +30,6 @@ export function About() {
                     </div>
                 </div>
             </div>
-            <hr className="mt-10 bg-gray-300 dark:bg-gray-800"/>
         </div>
     )
 }

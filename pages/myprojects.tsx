@@ -7,27 +7,22 @@ import { About } from '../components/about'
 import { Footer } from '../components/footer'
 import { NavBar } from '../components/navbar'
 import { ThemeProvider } from 'next-themes'
+import { Projects } from '../components/projects'
 
-const Home: NextPage = () => {
-
-
+export default function MyProjects() {
   return (
-    <div>
-    <ThemeProvider attribute="class" enableSystem={false}>
+    <div >
+    <ThemeProvider attribute="class" >
       <Head>
-        <title>Ankur Patil</title>
+        <title>MyProjects</title>
         <meta name="description" content="itsankur.tech" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
         <NavBar />
-        <Cintro />
-        <About />
-        <div className="-mt-20">
+        <Projects />
         <Footer />
-        </div>
     </ThemeProvider>
     </div>
   )
 }
 
-export default Home

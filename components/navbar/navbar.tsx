@@ -1,16 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { ToggleButton } from '../toggleButton/toggleButton'
 import Image from 'next/image'
 import logo from "../../images/logo.svg"
+import { useRouter } from 'next/router'
 
 const navigation = [
-  { name: 'About', href: '/', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Blog', href: '#', current: false },
-  { name: 'Resume', href: 'https://drive.google.com/file/d/1LGnYEZ1SQ5DYcRWO58I5Z1RkdRKqO9Y_/view' , current: true, },
+  { name: 'About', link: '/', current: false },
+  { name: 'Projects', link: '/myprojects', current: false },
+  { name: 'Blog', link: '#', current: false },
+  { name: 'Resume', link: 'https://drive.google.com/file/d/1LGnYEZ1SQ5DYcRWO58I5Z1RkdRKqO9Y_/preview' , current: true, },
 ]
 
 function classNames(...classes : string[]) {
@@ -18,7 +19,10 @@ function classNames(...classes : string[]) {
 }
 
 export function NavBar() {
+  
+  const router = useRouter();
 
+  
   return (
       <>
     <Disclosure as="nav" className="sticky top-0 py-2 z-10 bg-white-700 dark:bg-black-700 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90 border-b border-gray-250 dark:border-gray-600">
@@ -28,7 +32,7 @@ export function NavBar() {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-black-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-black-700 focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white focus:ring-black ">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -47,20 +51,27 @@ export function NavBar() {
                 </div>
                 <div className="hidden sm:block lg:pl-20 lg:ml-20 md:ml-20 sm:ml-6">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <Link href={item.href} key={item.name} replace>
+                    {navigation.slice(0,3).map((item) => (
+                      <Link href={item.link} key={item.toString()} passHref>
                       <a
+                        key={item.name}
                         target="_blank"
-                        className={classNames(
-                          item.current ? 'bg-blue-600 text-white' : 'text-black-700 dark:text-white hover:bg-blue-600 hover:text-white dark:hover:text-black',
-                          'px-3 py-2 rounded-md text-lg font-RobotoC font-regular text-1xl'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
+                        className={`cursor-pointer ${
+                          router.pathname === item.link ? 'bg-blue-600 text-white dark:text-black px-3 py-2 rounded-md text-lg font-RobotoC font-regular text-1xl' : 'text-black-700 dark:text-white hover:bg-blue-600 hover:text-white dark:hover:text-black px-3 py-2 rounded-md text-lg font-RobotoC font-regular text-1xl'
+                        }`}
                       >
                         {item.name}
                       </a>
                       </Link>
                     ))}
+                    <Link href='/resume'  passHref>
+                    <a
+                      target="_blank"
+                      className='bg-orange text-white dark:text-black px-3 py-2 rounded-md text-lg font-RobotoC font-regular text-1xl' 
+                    >
+                      Resume
+                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -75,20 +86,28 @@ export function NavBar() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
+              {navigation.slice(0,3).map((item) => (
+                <Link href={item.link} key={item.toString()} passHref>
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-blue-600 text-white' : 'text-black-700 hover:bg-blue-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-lg font-RobotoC font-regular'
-                  )}
+                  className={`classNames ${
+                    router.pathname === item.link  ? 'bg-blue-600 text-white block px-3 py-2 rounded-md text-lg font-RobotoC font-regular ' : 'text-black-700 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-lg font-RobotoC font-regular'
+                  }`}
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
+                </Link>
               ))}
+              <Link href='/resume' passHref>
+              <Disclosure.Button
+                as="a"
+                className='bg-orange text-white dark:text-black block px-3 py-2 rounded-md text-lg font-RobotoC font-regular'
+              >
+                Resume
+              </Disclosure.Button>
+              </Link>
             </div>
           </Disclosure.Panel>
         </>
