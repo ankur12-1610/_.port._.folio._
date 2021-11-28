@@ -21,6 +21,7 @@ module.exports = {
           'lcolor': '#0a66c2',
           'red-blue': ['#f00', '#00f'],
           'blue-orange': ['#2563EB', '#D35269'],
+          'orange-blue': ['#D35269', '#2563EB'],
           'blue-green': ['#0000ff', '#00FF00'],
           'red-green-blue': ['#f00', '#0f0', '#00f'],
           'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
@@ -35,7 +36,7 @@ module.exports = {
         border: { // defaults to these values (optional)
           '1': '1px',
           '2': '2px',
-          '4': '4px',
+          '4': '6px',
         },
       },
       colors: {
