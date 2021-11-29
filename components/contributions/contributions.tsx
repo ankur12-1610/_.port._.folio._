@@ -1,16 +1,9 @@
-import React from "react"
-import { SkillCard } from "../skillcard/skillcard"
-import web from "../../images/skills/web.png"
-import { SiTorbrowser, SiDjango, SiNextdotjs, SiOctopusdeploy } from "react-icons/si"
-import { AiFillAlert, AiFillCode } from "react-icons/ai"
-import { GrDeploy } from "react-icons/gr"
-import { MdOutlineDesignServices } from "react-icons/md"
-import { Fade } from "react-awesome-reveal"
+import React from 'react'
 
+export const Contributions() {
+    return (
 
-export function Skills() {
-
-    const skills = [
+    const orgs = [
         {
             id:1,
             title: "Web Development",
@@ -54,10 +47,11 @@ export function Skills() {
             icon: <MdOutlineDesignServices />
         },
     ]
+
     return (
         <div className="container px-8 py-5 mx-auto max-w-5xl lg:mb-28">
             <Fade direction="up" triggerOnce={true}>
-         <h1 className="text-center font-Dosis text-3xl font-semibold text-gray-900 lg:text-5xl md:text-5xl dark:text-white md:mb-12 lg:mb-20 "><a className="text-orange">Skills</a> <a className="text-blue-600">(⌐■_■)</a></h1>
+         <h1 className="text-center font-Dosis text-3xl font-semibold text-gray-900 lg:text-5xl md:text-5xl dark:text-white md:mb-12 lg:mb-20 "><a className="text-orange">Contributions</a> <a className="text-blue-600">(⌐■_■)</a></h1>
             </Fade>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:-mt-20 ">
             <Fade direction="up" triggerOnce={true}>
@@ -68,4 +62,5 @@ export function Skills() {
             </div>
         </div>
     )
+
 }

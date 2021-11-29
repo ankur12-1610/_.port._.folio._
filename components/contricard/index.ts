@@ -1,0 +1,1 @@
+export { ContriCard } from './contricard';

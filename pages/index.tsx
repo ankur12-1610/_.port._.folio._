@@ -9,9 +9,15 @@ import { NavBar } from '../components/navbar'
 import { Skills } from '../components/skills'
 import { ThemeProvider } from 'next-themes'
 import { ProgressBar } from '../components/progressBar'
+import "intersection-observer"
 
 const Home: NextPage = () => {
 
+  async function loadPolyfills() {
+    if (typeof window.IntersectionObserver === "undefined") {
+      await import("intersection-observer");
+    }
+  }
 
   return (
     <div>
