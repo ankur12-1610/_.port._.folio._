@@ -11,21 +11,21 @@ export function Cintro() {
         <div className="container px-8 py-5 mx-auto max-w-5xl">
             <div className="lg:space-x-5 mb-8 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
                 <div className="lg:px-4 lg:mt-12 ">
-                    <Fade direction="right" triggerOnce={true} delay={500}>
+                    <Fade direction="right" triggerOnce delay={500}>
                     <h1 className="font-Dosis text-3xl font-semibold text-gray-900 lg:text-5xl md:text-5xl dark:text-white">
                         <a className="text-orange">Ankur</a> <a className="text-blue-600">Patil</a>
                     </h1>
                     </Fade>
                     <div className="font-RobotoC font-light mt-5 dark:text-white lg:text-2xl md:text-2xl sm:text-1xl">
-                    <Fade direction="left" triggerOnce={true} delay={500}>
+                    <Fade direction="left" triggerOnce delay={500}>
                         <p>
                          from <a className="text-blue-600">ankur12-1610</a> import *
                         </p>
                     </Fade>
-                    <Fade direction="right" triggerOnce={true} delay={500}>
+                    <Fade direction="right" triggerOnce delay={500}>
                             <p><a className="text-blue-600">ankur12-1610</a> = [<a className="text-orange">'backend'</a>, <a className="text-orange">'frontend'</a>, <a className="text-orange">'open-source'</a>, <a className="text-orange">'design'</a>] </p>
                     </Fade>
-                    <Fade direction="left" triggerOnce={true} delay={500}>
+                    <Fade direction="left" triggerOnce delay={500}>
                             <p><a className="text-blue-600">ankur12-1610</a>.append(<a className="text-orange">'still learning'</a>)</p>
                     </Fade>
                         <div className="lg:mr-10 py-8 grid grid-cols-5 gap-4">

@@ -57,7 +57,8 @@ module.exports = {
         },
         width: {
           'lg': '280px',
-        }
+          'xlg': '400px',
+        },
     },
   },
   variants: {

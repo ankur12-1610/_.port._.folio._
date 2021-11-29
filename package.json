@@ -20,6 +20,7 @@
     "react-icons": "^4.3.1",
     "react-iframe": "^1.8.0",
     "react-is-mounted-hook": "^1.1.2",
+    "react-reveal": "^1.2.2",
     "react-use": "^17.3.1",
     "tailwindcss-border-gradient-radius": "^2.0.0"
   },

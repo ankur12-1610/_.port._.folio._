@@ -9,7 +9,6 @@ import tictactoe from "../../images/projects/tictactoe.png"
 import webdev from "../../images/projects/Vector.svg"
 import logo from "../../images/logo.svg"
 import { Card } from "../card"
-import { Fade } from "react-awesome-reveal"
 
 
 export function Projects() {
@@ -78,15 +77,11 @@ export function Projects() {
     ]
     return (
         <div className="projects container px-8 py-5 mx-auto max-w-5xl ">
-            <Fade direction="up" triggerOnce={true}>
          <h1 className="text-center font-Dosis text-3xl font-semibold text-gray-900 lg:text-5xl md:text-5xl dark:text-white md:mb-12 lg:mb-36 "><a className="text-orange">Projects</a> <a className="text-blue-600">\(◦'⌣'◦)/</a></h1>
-            </Fade>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:-mt-20 ">
-            <Fade direction="up" triggerOnce={true}>
             {projects.map((item) => (
                 <Card title={item.title} key={item.id} link={item.link} description={item.description} image={item.image} tags={item.tags} height={item.height} width={item.width} />
               ))}
-            </Fade>
             </div>
         </div>
     )
