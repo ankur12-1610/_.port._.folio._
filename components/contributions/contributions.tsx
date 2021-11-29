@@ -1,11 +1,12 @@
 import { Description } from '@headlessui/react/dist/components/description/description'
 import React from 'react'
-import { Fade } from "react-awesome-reveal"
 import { ContriCard } from '../contricard'
 import matrix from "../../images/contributions/matrix.png"
 import zulip from "../../images/contributions/zulip.png"
 import saic from "../../images/contributions/SAIC.png"
 import cops from "../../images/contributions/cops.png"
+import { Fade } from 'react-awesome-reveal'
+import { SiIterm2 } from 'react-icons/si'
 
 export function Contributions() {
     const orgs = [
@@ -47,10 +48,14 @@ export function Contributions() {
 
     return (
         <div className="container px-8 py-5 mx-auto max-w-5xl lg:mb-28">
+        <Fade direction="down" triggerOnce={true} >
          <h1 className="text-center font-Dosis text-3xl font-semibold text-gray-900 lg:text-5xl md:text-5xl dark:text-white md:mb-12 lg:mb-20 mt-26 lg:-mt-20"><a className="text-orange">Contributions</a> <a className="text-blue-600">(＾ｖ＾)</a></h1>
+        </Fade>
             <div className="grid lg:grid-cols-2 md:grid-cols-2 lg:-mt-12 sm:px-6 lg:px-10">
             {orgs.map((item) => (
+            <Fade direction="up" triggerOnce={true} delay={100*item.id} key={item.id}>
                 <ContriCard title={item.title} key={item.id} description={item.description} image={item.image} gitl={item.gitl} browl={item.browl} />
+            </Fade>
               ))}
             </div>
         </div>
