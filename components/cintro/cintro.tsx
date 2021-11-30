@@ -56,7 +56,6 @@ export function Cintro() {
                         className="rounded-full"
                         width={250}
                         height={250}
-                        placeholder="blur"
                     />
                 </div>
                 </Fade>

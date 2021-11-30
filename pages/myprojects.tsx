@@ -8,8 +8,22 @@ import { Footer } from '../components/footer'
 import { NavBar } from '../components/navbar'
 import { ThemeProvider } from 'next-themes'
 import { Projects } from '../components/projects'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 export default function MyProjects() {
+
+  const router = useRouter()
+
+  useEffect(() => {
+    // Always do navigations after the first render
+    router.push('/myprojects?counter=10', undefined, { shallow: true })
+  }, [])
+
+  useEffect(() => {
+    // The counter changed!
+  }, [router.query.counter])
+
   return (
     <div >
     <ThemeProvider attribute="class" >

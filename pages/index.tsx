@@ -10,9 +10,21 @@ import { Skills } from '../components/skills'
 import { ThemeProvider } from 'next-themes'
 import { ProgressBar } from '../components/progressBar'
 import { Contributions } from '../components/contributions'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
 
+  const router = useRouter()
+
+  useEffect(() => {
+    // Always do navigations after the first render
+    router.push('/?counter=10', undefined, { shallow: true })
+  }, [])
+
+  useEffect(() => {
+    // The counter changed!
+  }, [router.query.counter])
 
   return (
     <div>
