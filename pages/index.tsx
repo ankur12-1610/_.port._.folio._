@@ -26,8 +26,8 @@ const Home: NextPage = () => {
         <About />
         <Skills />
         <Contributions />
-        <div className="mt-6">
-        <Footer />
+        <div className="mt-6 mb-10">
+        <Footer/>
         </div>
     </div>
   );

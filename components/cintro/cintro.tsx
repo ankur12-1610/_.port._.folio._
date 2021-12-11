@@ -51,7 +51,7 @@ export function Cintro() {
                 <div className="flex-shrink-0 lg:mt-12 lg:pl-28 md:mt-2 mb-4">
                     <Image
                         src={profile}
-                        alt="Profile"
+                        alt="Profile Pic"
                         priority={true}
                         className="rounded-full"
                         width={250}

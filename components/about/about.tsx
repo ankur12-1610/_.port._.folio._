@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import Naruto from "../../images/naruto.gif"
+import Naruto from "../../images/naruto.webp"
 import { Fade } from "react-awesome-reveal"
 
 export function About() {

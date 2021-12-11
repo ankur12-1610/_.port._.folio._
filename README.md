@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="HG_LOGO" src="images/logo.svg" height="64" />
+</div>
 
-## Getting Started
+<br>
+<p align="center">
+Personal Porfolio
+</p>
+<p align="center">
+crafted with <span style="color: #8b0000;">&hearts;</span> by <a href="https://itsankur.tech">Ankur Patil</a>.
+</p>
 
-First, run the development server:
+> Ankur's Developer Portfolio built on NextJS!
 
-```bash
-npm run dev
-# or
-yarn dev
+## Built With
+
+This website is built with <span style="color: #8b0000;">&hearts;</span> on [NextJS](https://nextjs.org/), statically typed in [TypeScript](https://www.typescriptlang.org/) following the best practises in the market.
+
+## Installation 🔧
+
+Install dependencies
+
+```
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Building
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+$ npm run build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Running Server 🚀
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Start the development server
 
-## Learn More
+```
+$ npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Other Commands 🚧
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Use ESLint to check all files
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+$ npm run lint
+```
 
-## Deploy on Vercel
+Format the code using Prettier
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+$ npm run format
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Forking this repo 🚨
+
+Many people have contacted us asking if they can use this code for their own websites. The answer to that question is usually **yes**, but with credits and approval. There are some cases, such as using this code for a business or something that is greater than a personal project, that we may be less comfortable saying yes to. If in doubt, please don't hesitate to ask us.
+
+We value keeping this site open source, but as you all know, _**plagiarism is bad**_. We spent a non-negligible amount of effort developing, designing, and trying to perfect this iteration of our website, and we are proud of it! All we ask is to not claim this effort as your own.
