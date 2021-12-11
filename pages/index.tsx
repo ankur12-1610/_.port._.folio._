@@ -15,17 +15,6 @@ import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
 
-  const router = useRouter()
-
-  useEffect(() => {
-    // Always do navigations after the first render
-    router.push('/?counter=10', undefined, { shallow: true })
-  }, [])
-
-  useEffect(() => {
-    // The counter changed!
-  }, [router.query.counter])
-
   return (
     <div>
     <ThemeProvider attribute="class" enableSystem={false}>
@@ -45,7 +34,16 @@ const Home: NextPage = () => {
         </div>
     </ThemeProvider>
     </div>
-  )
+  );
+}
+
+export async function  getServerSideProps() {
+  await new Promise(resolve => setTimeout(resolve, 500));
+
+  return {
+    props: {},
+  };
 }
 
 export default Home
+

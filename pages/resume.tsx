@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.scss'
 import { ThemeProvider } from 'next-themes'
 import Iframe from 'react-iframe'
 
-export default function Resume() {
+function Resume() {
   return (
     <div >
     <ThemeProvider attribute="class" >
@@ -26,3 +26,12 @@ export default function Resume() {
   )
 }
 
+export async function  getServerSideProps() {
+  await new Promise(resolve => setTimeout(resolve, 500));
+
+  return {
+    props: {},
+  };
+}
+
+export default Resume
