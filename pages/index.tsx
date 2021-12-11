@@ -7,17 +7,14 @@ import { About } from '../components/about'
 import { Footer } from '../components/footer'
 import { NavBar } from '../components/navbar'
 import { Skills } from '../components/skills'
-import { ThemeProvider } from 'next-themes'
 import { ProgressBar } from '../components/progressBar'
 import { Contributions } from '../components/contributions'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+
 
 const Home: NextPage = () => {
 
   return (
-    <div>
-    <ThemeProvider attribute="class" enableSystem={false}>
+    <div className='dark:bg-black'>
       <Head>
         <title>Ankur Patil</title>
         <meta name="description" content="itsankur.tech" />
@@ -32,13 +29,12 @@ const Home: NextPage = () => {
         <div className="mt-6">
         <Footer />
         </div>
-    </ThemeProvider>
     </div>
   );
 }
 
 export async function  getServerSideProps() {
-  await new Promise(resolve => setTimeout(resolve, 500));
+  await new Promise(resolve => setTimeout(resolve, 100));
 
   return {
     props: {},
