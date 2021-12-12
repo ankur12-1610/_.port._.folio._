@@ -14,7 +14,7 @@ import { Contributions } from '../components/contributions'
 const Home: NextPage = () => {
 
   return (
-    <div className='dark:bg-black'>
+    <div>
       <Head>
         <title>Ankur Patil</title>
         <meta name="description" content="itsankur.tech" />
