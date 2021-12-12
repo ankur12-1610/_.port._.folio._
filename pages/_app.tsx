@@ -8,7 +8,7 @@ import Image from 'next/image'
 function MyApp({ Component, pageProps }: AppProps) {
 
   return (
-   <ThemeProvider  attribute="class">
+   <ThemeProvider defaultTheme="light" attribute="class" enableSystem={false}>
     <ScrollToTop top={400} smooth component={<Image src={up} alt="up" className="bg-transparent" />}/>
      <Component {...pageProps} />
    </ThemeProvider>
