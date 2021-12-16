@@ -1,12 +1,23 @@
 on:
   issues:
-    types: [opened]
+    types: [opened, labeled]
 
 jobs:
   apply_Z-Labs_label:
+    name: Add Z-Labs label for features behind labs flags
     runs-on: ubuntu-latest
     if: >
-        contains(github.event.issue.labels.*.name, 'O-Frequent')
+        contains(github.event.issue.labels.*.name, 'A-Maths') || 
+        contains(github.event.issue.labels.*.name, 'A-Message-Pinning') ||
+        contains(github.event.issue.labels.*.name, 'A-Threads') ||
+        contains(github.event.issue.labels.*.name, 'A-Polls') ||
+        contains(github.event.issue.labels.*.name, 'A-Location-Sharing') ||
+        contains(github.event.issue.labels.*.name, 'A-Message-Bubbles') ||
+        contains(github.event.issue.labels.*.name, 'Z-Maximised-Widgets') ||
+        contains(github.event.issue.labels.*.name, 'Z-IA') ||
+        contains(github.event.issue.labels.*.name, 'A-Themes-Custom') ||
+        contains(github.event.issue.labels.*.name, 'A-E2EE-Dehydration') ||
+        contains(github.event.issue.labels.*.name, 'A-Tags')
     steps:
       - uses: actions/github-script@v5
         with:
