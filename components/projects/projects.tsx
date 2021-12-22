@@ -39,7 +39,7 @@ export function Projects() {
             id:3,
             title: "Todos List",
             description: "Todos List webapp with React and Bootstrap, with an interactive and improved UI.",
-            link: "https://github.com/ankur12-1610/webdev-rookies-backend",
+            link: "https://github.com/ankur12-1610/Todo-react",
             image: reactb,
             height: "240px",
             width: "350px",
