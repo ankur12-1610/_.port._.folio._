@@ -12,7 +12,7 @@ export function About() {
         </Fade>
            <div className="lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
            <div className="flex-shrink-0 lg:pt-16 lg:px-4 md:mt-2 mb-4 md:pt-5 sm:pt-5">
-           <Fade direction="down" triggerOnce delay={200}>
+           <Fade direction="left" triggerOnce delay={200}>
                 <Image
                     src={Naruto}
                     alt="Naruto"
@@ -23,7 +23,7 @@ export function About() {
                 />
             </ Fade>
              </div>
-             <Fade direction="up" triggerOnce delay={200}>
+             <Fade direction="right" triggerOnce delay={200}>
                 <div className="lg:px-4 lg:mt-12 ">
                     <div className="font-RobotoC font-light mt-5 dark:text-white lg:text-2xl md:text-2xl sm:text-1xl text-justify">
                         <p className="mb-5">Hemlo &#128075;,</p>
