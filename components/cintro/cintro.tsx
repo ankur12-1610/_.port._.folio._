@@ -29,19 +29,19 @@ export function Cintro() {
                             <p><a className="text-blue-600">ankur12-1610</a>.append(<a className="text-orange">'still learning'</a>)</p>
                     </Fade>
                         <div className="lg:mr-10 py-8 grid grid-cols-5 gap-4">
-                        <Fade direction="up" triggerOnce delay={900}>
+                        <Fade direction="left" triggerOnce delay={900}>
                             <div><Link href="mailto:ankur.patil.cd.mat20@itbhu.ac.in" passHref><a target="_blank"><button className="text-orange"><AiFillMail size={35}/></button></a></Link></div>
                         </Fade>
-                        <Fade direction="up" triggerOnce delay={900}>
+                        <Fade direction="left" triggerOnce delay={900}>
                             <div><Link href="https://www.linkedin.com/in/ankur-patil-a112a3202/" passHref><a target="_blank"><button className="text-lcolor"><AiFillLinkedin size={35}/></button></a></Link></div>
                         </Fade> 
                         <Fade direction="up" triggerOnce delay={900}>
                             <div><Link href="https://github.com/ankur12-1610" passHref><a target="_blank"><button><AiFillGithub size={35}/></button></a></Link></div>
                         </Fade>
-                        <Fade direction="up" triggerOnce delay={900}>
+                        <Fade direction="right" triggerOnce delay={900}>
                             <div><Link href="https://twitter.com/ankurrap" passHref><a target="_blank"><button className="text-lcolor"><AiFillTwitterCircle size={35}/></button></a></Link></div>
                         </Fade>
-                        <Fade direction="up" triggerOnce delay={900}>
+                        <Fade direction="right" triggerOnce delay={900}>
                             <div><Link href="https://dev.to/ankur121610" passHref><a target="_blank"><button ><Image className="dark:bg-white rounded-md" src={devto} height={35} width={35} /></button></a></Link></div>
                         </Fade>
                         </div>
