@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 const navigation = [
   { name: 'Home', link: '/', current: false },
   { name: 'Projects', link: '/myprojects', current: false },
-  { name: 'Blog', link: '#', current: false },
+  { name: 'Blog', link: 'https://my-blog.ankurrev.tech/', current: false },
   { name: 'Resume', link: 'https://drive.google.com/file/d/1LGnYEZ1SQ5DYcRWO58I5Z1RkdRKqO9Y_/preview' , current: true, },
 ]
 
