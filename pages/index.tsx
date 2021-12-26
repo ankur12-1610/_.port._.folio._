@@ -17,7 +17,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Ankur Patil</title>
-        <meta name="description" content="itsankur.tech" />
+        <meta name="google-site-verification" content="Owmn_tza4uRqwBfUUA4F-wHh9t-QWjSewv2UN_ob6gY" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
         <ProgressBar/>
