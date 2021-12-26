@@ -4,6 +4,7 @@ import Image from "next/image"
 import profile from "../../images/pp.png"
 import devto from "../../images/devto.svg"
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiFillMail } from "react-icons/ai"
+import { SiHashnode } from "react-icons/si"
 import { Fade } from "react-awesome-reveal"
 
 export function Cintro() {
@@ -42,7 +43,7 @@ export function Cintro() {
                             <div><Link href="https://twitter.com/ankurrap" passHref><a target="_blank"><button className="text-lcolor"><AiFillTwitterCircle size={35}/></button></a></Link></div>
                         </Fade>
                         <Fade direction="up" triggerOnce delay={900}>
-                            <div><Link href="https://dev.to/ankur121610" passHref><a target="_blank"><button ><Image className="dark:bg-white rounded-md" src={devto} height={35} width={35} /></button></a></Link></div>
+                            <div><Link href="https://hashnode.com/@ankur12" passHref><a target="_blank"><button ><SiHashnode size={35} /></button></a></Link></div>
                         </Fade>
                         </div>
                     </div>
