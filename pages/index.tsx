@@ -16,15 +16,6 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6VK08CKJP"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-T6VK08CKJP');
-        </script>
         <title>Ankur Patil</title>
         <meta name="google-site-verification" content="Owmn_tza4uRqwBfUUA4F-wHh9t-QWjSewv2UN_ob6gY" />
         <link rel="icon" href="/favicon.ico" />
