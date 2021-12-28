@@ -4,7 +4,7 @@
 
 <br>
 <p align="center">
-Personal Porfolio
+yo Personal Porfolio
 </p>
 <p align="center">
 crafted with <span style="color: #8b0000;">&hearts;</span> by <a href="https://itsankur.tech">Ankur Patil</a>.
