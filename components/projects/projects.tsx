@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
+import pract from "../../images/projects/pr-activity.png"
 import axios from "../../images/projects/axios.png"
 import djb from "../../images/projects/djb.png"
 import drf from "../../images/projects/drf-logo.png"
@@ -15,8 +16,18 @@ import { Fade } from "react-awesome-reveal"
 export function Projects() {
 
     const projects = [
-        {
+        {   
             id:1,
+            title: "Pull Request Action 🚀",
+            description: "This GitHub action activates when a contributor raises a PR. It comments and reacts to the PR. Moreover, assigns the PR to the author.",
+            link: "https://github.com/ankur12-1610/pull-request-action",
+            image: pract,
+            height: "250px",
+            width: "350px",
+            tags: ['github-actions', 'typescript', 'dockerfile']
+        },
+        {
+            id:2,
             title: "Webdev Rookies - Backend",
             description: "A backend server made for Webdev Rookies website, made with Django REST framework and setup on Heroku Postgresql for database management.",
             link: "https://github.com/ankur12-1610/webdev-rookies-backend",
@@ -26,7 +37,7 @@ export function Projects() {
             tags: ['django-rest', 'postgresql', 'heroku']
         },
         {
-            id:2,
+            id:3,
             title: "Webdev Rookies - Frontend",
             description: "A fullstack webapp which has functionalities like Google Classroomm made with React and integrated to the backend server with Axios",
             link: "https://github.com/ankur12-1610/google-classroom-clone-frontend",
@@ -36,7 +47,7 @@ export function Projects() {
             tags: ['reactJs', 'axios', 'fullstack']
         },
         {
-            id:3,
+            id:4,
             title: "Todos List",
             description: "Todos List webapp with React and Bootstrap, with an interactive and improved UI.",
             link: "https://github.com/ankur12-1610/Todo-react",
@@ -46,7 +57,7 @@ export function Projects() {
             tags: ['reactjs', 'bootstrap', 'netlify']
         },
         {
-            id:4,
+            id:5,
             title: "Personal Portfolio",
             description: "Personal Portfolio website created with NextJs and Tailwind CSS.",
             link: "https://github.com/ankur12-1610/_.port._.folio._",
@@ -54,16 +65,6 @@ export function Projects() {
             height: "240px",
             width: "350px",
             tags: ['nextJs', 'tailwind', 'vercel', 'gh-pages']
-        },
-        {
-            id:5,
-            title: "Personal Portfolio(dynamic)",
-            description: "Personal Portfolio website created with Django and Bootstrap.",
-            link: "https://github.com/ankur12-1610/itsankur",
-            image: djb,
-            height: "250px",
-            width: "350px",
-            tags: ['django', 'bootstrap', 'Heroku']
         },
         {   
             id:6,
