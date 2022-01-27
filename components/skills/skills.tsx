@@ -28,7 +28,7 @@ export function Skills() {
         {
             id:3,
             title: "Backend Frameworks",
-            tags: ['Django'],
+            tags: ['Django', 'Django REST Framework'],
             image: web,
             icon: <SiDjango />
         },
