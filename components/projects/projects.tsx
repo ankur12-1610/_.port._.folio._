@@ -1,7 +1,9 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
+import evs from "../../images/projects/evs.png"
 import pract from "../../images/projects/pr-activity.png"
+import hackalog from "../../images/projects/hackalog.png"
 import axios from "../../images/projects/axios.png"
 import djb from "../../images/projects/djb.png"
 import drf from "../../images/projects/drf-logo.png"
@@ -18,6 +20,16 @@ export function Projects() {
     const projects = [
         {   
             id:1,
+            title: "Decentralized Voting System",
+            description: "The voting system based on Ethereum Network, this ensures that there is no central authority that can control the voting process.",
+            link: "https://github.com/ankur12-1610/decentralized-voting-system",
+            image: evs,
+            height: "250px",
+            width: "350px",
+            tags: ['etherium-blockchain', 'solidity', 'dApps']
+        },
+        {   
+            id:2,
             title: "Pull Request Action 🚀",
             description: "This GitHub action activates when a contributor raises a PR. It comments and reacts to the PR. Moreover, assigns the PR to the author.",
             link: "https://github.com/ankur12-1610/pull-request-action",
@@ -27,7 +39,7 @@ export function Projects() {
             tags: ['github-actions', 'typescript', 'dockerfile']
         },
         {
-            id:2,
+            id:3,
             title: "Webdev Rookies - Backend",
             description: "A backend server made for Webdev Rookies website, made with Django REST framework and setup on Heroku Postgresql for database management.",
             link: "https://github.com/ankur12-1610/webdev-rookies-backend",
@@ -37,7 +49,7 @@ export function Projects() {
             tags: ['django-rest', 'postgresql', 'heroku']
         },
         {
-            id:3,
+            id:4,
             title: "Webdev Rookies - Frontend",
             description: "A fullstack webapp which has functionalities like Google Classroomm made with React and integrated to the backend server with Axios",
             link: "https://github.com/ankur12-1610/google-classroom-clone-frontend",
@@ -47,17 +59,17 @@ export function Projects() {
             tags: ['reactJs', 'axios', 'fullstack']
         },
         {
-            id:4,
-            title: "Todos List",
-            description: "Todos List webapp with React and Bootstrap, with an interactive and improved UI.",
-            link: "https://github.com/ankur12-1610/Todo-react",
-            image: reactb,
+            id:5,
+            title: "Hackalog Frontend",
+            description: "The home for hackathons organised under COPS IIT(BHU)",
+            link: "https://hackalog.copsiitbhu.co.in/",
+            image: hackalog,
             height: "240px",
             width: "350px",
             tags: ['reactjs', 'bootstrap', 'netlify']
         },
         {
-            id:5,
+            id:6,
             title: "Personal Portfolio",
             description: "Personal Portfolio website created with NextJs and Tailwind CSS.",
             link: "https://github.com/ankur12-1610/_.port._.folio._",
@@ -65,16 +77,6 @@ export function Projects() {
             height: "240px",
             width: "350px",
             tags: ['nextJs', 'tailwind', 'vercel', 'gh-pages']
-        },
-        {   
-            id:6,
-            title: "Tic-Tac-Toe",
-            description: "Webapp to play tic-tac-toe game as multiplayer or with unbeatable bot implementing minimax algorithm.",
-            link: "https://github.com/ankur12-1610/Tic-Tac-Toe",
-            image: tictactoe,
-            height: "250px",
-            width: "350px",
-            tags: ['vannilajs', 'css', 'minimax-algo']
         },
     ]
     return (

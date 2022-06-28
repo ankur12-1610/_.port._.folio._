@@ -21,14 +21,14 @@ export function Skills() {
         {
             id:2,
             title: "Languages",
-            tags: ['Python', 'C', 'C++', 'Typescript'],
+            tags: ['Python', 'C', 'C++', 'JavaScript', 'TypeScript', 'Solidity'],
             image: web,
             icon: <AiFillCode />
         },
         {
             id:3,
             title: "Backend Frameworks",
-            tags: ['Django', 'Django REST Framework'],
+            tags: ['Django', 'Django REST Framework','Flask'],
             image: web,
             icon: <SiDjango />
         },
@@ -42,7 +42,7 @@ export function Skills() {
         {
             id:5,
             title: "Deployment",
-            tags: ['Netlify', 'Heroku', 'Vercel', 'gh-pages'],
+            tags: ['Netlify', 'Heroku', 'Vercel', 'gh-pages', 'AWS'],
             image: web,
             icon: <SiOctopusdeploy />
         },
