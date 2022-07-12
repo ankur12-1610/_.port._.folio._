@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import profile from "../../images/pp.png"
+import profile from "../../images/pp.jpeg"
 import devto from "../../images/devto.svg"
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiFillMail } from "react-icons/ai"
 import { SiHashnode } from "react-icons/si"
