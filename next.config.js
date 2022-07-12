@@ -2,6 +2,9 @@
 const path = require('path')
 
 module.exports = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   StrictReactMode: true,
     /* Add Your Scss File Folder Path Here */
   sassOptions: {

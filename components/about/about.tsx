@@ -26,7 +26,7 @@ export function About() {
              <Fade direction="up" triggerOnce delay={200}>
                 <div className="lg:px-4 lg:mt-12 ">
                     <div className="font-RobotoC font-light mt-5 dark:text-white lg:text-2xl md:text-2xl sm:text-1xl text-justify">
-                        <p className="mb-5">Hemlo &#128075;,</p>
+                        <p className="mb-5">Heylo &#128075;,</p>
                         <p className="mt-5">I'm Ankur Patil, a Mathematics and Computing undergraduate at IIT (BHU) Varanasi. I fell in love with programming and tech in my freshman year.</p>
                         <p className="mt-5">WebDev has caught my attention right from the start of my programming journey and has always startled me. I love exploring new tech and have worked with various technologies. I enjoy building REST APIs, Full-Stack Webapps and static websites. </p>
                         <p className="mt-5">I &#128151; contributing to Open Source and building something that can help people.</p>
