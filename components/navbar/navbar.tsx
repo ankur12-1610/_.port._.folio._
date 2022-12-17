@@ -10,8 +10,8 @@ import { useRouter } from 'next/router'
 const navigation = [
   { name: 'Home', link: '/', current: false },
   { name: 'Projects', link: '/myprojects', current: false },
-  { name: 'Blog', link: 'https://my-blog.ankurrev.tech/', current: false },
-  { name: 'Resume', link: 'https://drive.google.com/file/d/1LGnYEZ1SQ5DYcRWO58I5Z1RkdRKqO9Y_/preview' , current: true, },
+  { name: 'Blog', link: 'https://blog.ankur.codes/', current: false },
+  { name: 'Resume', link: 'https://drive.google.com/file/d/1C7v-g-WZVMngEwy1-bEs6sY5ECsiuvC2/preview?usp=sharing' , current: true, },
 ]
 
 function classNames(...classes : string[]) {

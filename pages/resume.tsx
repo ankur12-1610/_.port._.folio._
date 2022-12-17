@@ -14,7 +14,7 @@ function Resume() {
         <meta name="description" content="itsankur.tech" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Iframe url="https://drive.google.com/file/d/1oQnh_HZH7yhdL0Ap0zICIaUTtzPLMFzu/preview?usp=sharing"
+        <Iframe url="https://drive.google.com/file/d/1C7v-g-WZVMngEwy1-bEs6sY5ECsiuvC2/preview?usp=sharing"
             position="absolute"
             width="100%"
             id="myId"
