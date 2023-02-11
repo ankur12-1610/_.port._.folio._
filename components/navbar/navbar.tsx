@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Home', link: '/', current: false },
   { name: 'Projects', link: '/myprojects', current: false },
   { name: 'Blog', link: 'https://blog.ankur.codes/', current: false },
-  { name: 'Resume', link: 'https://drive.google.com/file/d/1C7v-g-WZVMngEwy1-bEs6sY5ECsiuvC2/preview?usp=sharing' , current: true, },
+  { name: 'Resume', link: 'https://drive.google.com/file/d/1-RJw3wDwzCNDugjZlI06SoA3GZb27WS1/preview?usp=share_link' , current: true, },
 ]
 
 function classNames(...classes : string[]) {
