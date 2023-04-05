@@ -18,7 +18,7 @@ export function Card(props: any) {
                 </p>
                   </a>
                     </Link>
-                <p className="text-gray-900 dark:text-white font-light font-RobotoC text-lg">
+                <p className="text-gray-600 dark:text-gray-300 font-light font-Roboto text-lg">
                     {description}
                 </p>
                 <div className="flex flex-wrap justify-starts items-center py-3 text-xs text-white font-light font-Dosis">

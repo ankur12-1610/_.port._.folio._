@@ -9,8 +9,10 @@ import djb from "../../images/projects/djb.png"
 import drf from "../../images/projects/drf-logo.png"
 import reactb from "../../images/projects/reactb.png"
 import tictactoe from "../../images/projects/tictactoe.png"
+import metamask from "../../images/projects/metamask-fox.svg"
 import webdev from "../../images/projects/Vector.svg"
 import logo from "../../images/logo.svg"
+import covid19detector from "../../images/projects/covid19detector.png"
 import { Card } from "../card"
 import { Fade } from "react-awesome-reveal"
 
@@ -20,13 +22,13 @@ export function Projects() {
     const projects = [
         {   
             id:1,
-            title: "Decentralized Voting System",
-            description: "The voting system based on Ethereum Network, this ensures that there is no central authority that can control the voting process.",
-            link: "https://github.com/ankur12-1610/decentralized-voting-system",
-            image: evs,
+            title: "SnapX",
+            description: "SnapX is a MetaMask snap powered with notifications and account recovery features using biometric authentication. (Silver Medalist submission in ConsenSys’ MetaMask Snap Development Hackathon conducted at InterIIT Tech Meet 11.0 — February 2023)",
+            link: "https://github.com/ankur12-1610/snapx",
+            image: metamask,
             height: "250px",
             width: "350px",
-            tags: ['etherium-blockchain', 'solidity', 'dApps']
+            tags: ['MetaMask Snaps', 'Gatsby', 'REST APIs', 'FaceIO', 'AES', 'Bitcoin Protocols']
         },
         {   
             id:2,
@@ -40,20 +42,20 @@ export function Projects() {
         },
         {
             id:3,
-            title: "Webdev Rookies - Backend",
-            description: "A backend server made for Webdev Rookies website, made with Django REST framework and setup on Heroku Postgresql for database management.",
-            link: "https://github.com/ankur12-1610/webdev-rookies-backend",
+            title: "Google Classroom Clone",
+            description: "A fullstack webapp which has functionalities like Google Classroom. The frontend is made with React and integrated into the backend server with Axios and backend is built upon Django REST Framework.Postgresql for database management.",
+            link: "https://github.com/ankur12-1610/Google-Classroom-Clone",
             image: drf,
             height: "240px",
             width: "350px",
-            tags: ['django-rest', 'postgresql', 'heroku']
+            tags: ['reactJs', 'axios', 'fullstack', 'django-rest', 'postgresql', 'heroku']
         },
         {
             id:4,
-            title: "Webdev Rookies - Frontend",
-            description: "A fullstack webapp which has functionalities like Google Classroomm made with React and integrated to the backend server with Axios",
-            link: "https://github.com/ankur12-1610/google-classroom-clone-frontend",
-            image: webdev,
+            title: "Covid19 Detector",
+            description: "A deep learning algorithm implemented to detect Covid-19 coronavirus with X-Ray images. ReLU, max pooling, flattening layer and a dropout layer of 20% dropout rate form the basis of the model. The model achieved an overwhelming accuracy of 97%.",
+            link: "https://github.com/ankur12-1610/covid19_detector",
+            image: covid19detector,
             height: "240px",
             width: "350px",
             tags: ['reactJs', 'axios', 'fullstack']
@@ -80,9 +82,9 @@ export function Projects() {
         },
     ]
     return (
-        <div className="projects container px-8 py-5 mx-auto max-w-5xl ">
+        <div className="projects container px-8 py-5 mx-auto max-w-6xl ">
                         <Fade direction="down" triggerOnce>
-         <h1 className="text-center font-Dosis text-3xl font-semibold text-gray-900 lg:text-5xl md:text-5xl dark:text-white md:mb-12 lg:mb-36 "><a className="text-orange">Projects</a> <a className="text-blue-600">\(◦'⌣'◦)/</a></h1>
+         <h1 className="text-left font-Dosis text-3xl font-semibold text-gray-900 lg:text-5xl md:text-5xl md:mb-12 lg:mb-24 "><a className="text-blue-600">Projects</a></h1>
                         </Fade>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:-mt-20 ">
                 <Fade direction="up" triggerOnce>

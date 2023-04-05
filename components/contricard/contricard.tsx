@@ -14,7 +14,7 @@ export function ContriCard(props: any) {
 	<div
 		className="relative flex flex-col md:flex-row md:space-x-3 space-y-2 md:space-y-0 rounded-xl lg:pl-2 md:pl-2 max-w-xlg md:max-w-xlg mx-auto bg-none lg:h-60 md:h-60">
 		<div className="w-full md:w-1/4 bg-none grid place-items-center">
-			<Image src={image} alt="tailwind logo" className="rounded-xl" />
+			<Image src={image} alt="logo" className="rounded-xl" />
     </div>
 			<div className="w-full md:w-2/3 bg-none flex flex-col space-y-2 p-2 bg-none">
 				<div className="flex justify-between item-center">

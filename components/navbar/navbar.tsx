@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Home', link: '/', current: false },
   { name: 'Projects', link: '/myprojects', current: false },
   { name: 'Blog', link: 'https://blog.ankur.codes/', current: false },
-  { name: 'Resume', link: 'https://drive.google.com/file/d/1-RJw3wDwzCNDugjZlI06SoA3GZb27WS1/preview?usp=share_link' , current: true, },
+  { name: 'Resume', link: '/resume' , current: true, },
 ]
 
 function classNames(...classes : string[]) {
@@ -28,7 +28,7 @@ export function NavBar() {
     <Disclosure as="nav" className="sticky top-0 py-2 z-10 bg-white-700 dark:bg-black-700 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90 border-b border-gray-250 dark:border-gray-600">
       {({ open }) => (
         <>
-          <div className="max-w-5xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -53,7 +53,7 @@ export function NavBar() {
                 </a>
                 </Link>
                 </div>
-                <div className="hidden sm:block lg:pl-20 lg:ml-20 md:ml-20 sm:ml-6">
+                <div className="hidden sm:block lg:pl-20mmd:ml-20 sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.slice(0,3).map((item) => (
                       <Link href={item.link} key={item.toString()} passHref>
@@ -61,7 +61,7 @@ export function NavBar() {
                         key={item.name}
                         target="_blank"
                         className={`cursor-pointer ${
-                          router.pathname === item.link ? 'bg-blue-600 text-white dark:text-black px-3 py-2 rounded-md text-lg font-RobotoC font-regular text-1xl' : 'text-black-700 dark:text-white hover:bg-blue-600 hover:text-white dark:hover:text-black px-3 py-2 rounded-md text-lg font-RobotoC font-regular text-1xl'
+                          router.pathname === item.link ? 'bg-blue-600 text-white dark:text-white px-3 py-2 rounded-md text-lg font-Dosis font-regular text-2xl' : 'text-black-700 dark:text-white hover:bg-blue-600 hover:text-white dark:hover:text-black px-3 py-2 rounded-md text-lg font-Dosis font-regular text-2xl'
                         }`}
                       >
                         {item.name}
@@ -71,7 +71,7 @@ export function NavBar() {
                     <Link href='/resume'  passHref>
                     <a
                       target="_blank"
-                      className='bg-orange text-white dark:text-black px-3 py-2 rounded-md text-lg font-RobotoC font-regular text-1xl' 
+                      className='bg-orange text-white dark:text-white px-3 py-2 rounded-md text-lg font-Dosis font-regular text-2xl' 
                     >
                       Resume
                     </a>
@@ -96,7 +96,7 @@ export function NavBar() {
                   key={item.name}
                   as="a"
                   className={`classNames ${
-                    router.pathname === item.link  ? 'bg-blue-600 text-white block px-3 py-2 rounded-md text-lg font-RobotoC font-regular ' : 'text-black-700 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-lg font-RobotoC font-regular'
+                    router.pathname === item.link  ? 'bg-blue-600 text-white block px-3 py-2 rounded-md text-lg font-Dosis font-regular text-2xl' : 'text-black-700 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-lg font-Dosis font-regular text-2xl'
                   }`}
                   aria-current={item.current ? 'page' : undefined}
                 >
@@ -107,7 +107,7 @@ export function NavBar() {
               <Link href='/resume' passHref>
               <Disclosure.Button
                 as="a"
-                className='bg-orange text-white dark:text-black block px-3 py-2 rounded-md text-lg font-RobotoC font-regular'
+                className='bg-orange text-white dark:text-black block px-3 py-2 rounded-md text-lg font-Dosis font-regular text-2xl'
               >
                 Resume
               </Disclosure.Button>

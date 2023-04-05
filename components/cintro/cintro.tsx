@@ -12,23 +12,13 @@ export function Cintro() {
         <div className="container px-8 py-5 mx-auto max-w-5xl">
             <div className="lg:space-x-5 mb-8 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
                 <div className="lg:px-4 lg:mt-12 ">
-                    <Fade direction="down" triggerOnce delay={200}>
-                    <h1 className="font-Dosis text-3xl font-semibold text-gray-900 lg:text-5xl md:text-5xl dark:text-white">
-                        <a className="text-orange">Ankur</a> <a className="text-blue-600">Patil</a>
-                    </h1>
-                    </Fade>
+                    {/* <div className="font-RobotoC font-light mt-5 dark:text-white lg:text-2xl md:text-2xl sm:text-1xl text-justify"> */}
+                        <p className="mb-5">Hi &#128075;,</p>
+                        <p className="mt-5">I'm Ankur Patil, a Mathematics and Computing undergraduate at IIT (BHU) Varanasi. As a tech enthusiast and open-source contributor, I am deeply passionate about exploring and leveraging cutting-edge technologies. </p>
+                        <p className="mt-5">My expertise lies in APIs, Full Stack Webapps, Github Actions, and Blockchain, and I am currently focused on the exciting fields of Cloud Computing and Cryptography.</p>
+                        <p className="mt-5">In my spare time, I enjoy sharing my knowledge with the tech community through my technical <Link href="https://www.blog.ankur.codes/" passHref><a target="_blank" className="text-blue-600 hover:underline">blog</a></Link>.</p>
+                        <p className="mt-5 mb-5">Feel free to reach me on my handles mentioned above (although I'm more active on <Link href="https://www.linkedin.com/in/ankur-patil-a112a3202/" passHref><a target="_blank" className="text-blue-600 hover:underline">Linkedin</a></Link> &#128517;). Thanks for visiting my website :) </p>
                     <div className="font-RobotoC font-light mt-5 dark:text-white lg:text-2xl md:text-2xl sm:text-1xl">
-                    <Fade direction="up" triggerOnce delay={300}>
-                        <p>
-                         from <a className="text-blue-600">ankur12-1610</a> import *
-                        </p>
-                    </Fade>
-                    <Fade direction="down" triggerOnce delay={500}>
-                            <p><a className="text-blue-600">ankur12-1610</a> = [<a className="text-orange">'backend'</a>, <a className="text-orange">'frontend'</a>, <a className="text-orange">'open-source'</a>, <a className="text-orange">'design'</a>] </p>
-                    </Fade>
-                    <Fade direction="up" triggerOnce delay={700}>
-                            <p><a className="text-blue-600">ankur12-1610</a>.append(<a className="text-orange">'still learning'</a>)</p>
-                    </Fade>
                         <div className="lg:mr-10 py-8 grid grid-cols-5 gap-4">
                         <Fade direction="up" triggerOnce delay={900}>
                             <div><Link href="mailto:ankur.patil.cd.mat20@itbhu.ac.in" passHref><a target="_blank"><button className="text-orange"><AiFillMail size={35}/></button></a></Link></div>

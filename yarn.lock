@@ -1075,9 +1075,9 @@ camelize@^1.0.0:
   integrity sha512-W2lPwkBkMZwFlPCXhIlYgxu+7gC/NUlCtdK652DAJ1JdgV0sTrvuPFshNPrFa1TY2JOkLhgdeEBplB4ezEa+xg==
 
 caniuse-lite@^1.0.30001332, caniuse-lite@^1.0.30001335, caniuse-lite@^1.0.30001359:
-  version "1.0.30001365"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001365.tgz#72c2c3863b1a545cfd3d9953535bd2ee17568158"
-  integrity sha512-VDQZ8OtpuIPMBA4YYvZXECtXbddMCUFJk1qu8Mqxfm/SZJNSr1cy4IuLCOL7RJ/YASrvJcYg1Zh+UEUQ5m6z8Q==
+  version "1.0.30001474"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001474.tgz"
+  integrity sha512-iaIZ8gVrWfemh5DG3T9/YqarVZoYf0r188IjaGwx68j4Pf0SGY6CQkmJUIE+NZHkkecQGohzXmBGEwWDr9aM3Q==
 
 caw@^2.0.0, caw@^2.0.1:
   version "2.0.1"
@@ -3627,6 +3627,11 @@ next-page-transitions@^1.0.0-beta.2:
   dependencies:
     prop-types "^15.6.1"
     react-transition-group "^2.3.1"
+
+next-swc-linux-x64-gnu@^11.1.1-canary.3:
+  version "11.1.1-canary.3"
+  resolved "https://registry.yarnpkg.com/next-swc-linux-x64-gnu/-/next-swc-linux-x64-gnu-11.1.1-canary.3.tgz#5406f9321579528c5707ea8ca6e61e22009521cd"
+  integrity sha512-ccH39UwEgdP3oc8sHdEmtc9CnC2PUwCbKm6+WeP63FMvlApy2+fnGLyFU309/VR+LO5bq7w9+ILaCb1pgfidBA==
 
 next-themes@^0.0.15:
   version "0.0.15"

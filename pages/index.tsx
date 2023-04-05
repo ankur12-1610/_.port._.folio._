@@ -9,6 +9,7 @@ import { NavBar } from '../components/navbar'
 import { Skills } from '../components/skills'
 import { ProgressBar } from '../components/progressBar'
 import { Contributions } from '../components/contributions'
+import { Experience } from '../components/experience'
 
 
 const Home: NextPage = () => {
@@ -22,9 +23,10 @@ const Home: NextPage = () => {
         </Head>
         <ProgressBar/>
         <NavBar />
-        <Cintro />
+        {/* <Cintro /> */}
         <About />
-        <Skills />
+        <Experience />
+        {/* <Skills /> */}
         <Contributions />
         <div className="mt-6 mb-10">
         <Footer/>

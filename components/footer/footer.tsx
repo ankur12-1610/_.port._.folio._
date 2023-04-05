@@ -12,7 +12,7 @@ export function Footer() {
       Made with &#127856; and &#128151; by <Link href="https://github.com/ankur12-1610" passHref><a className="text-blue-600">ankur12-1610</a></Link>
     </p>
     <p className="font-regular text-black dark:text-white">
-    Copyright &copy; 2021 | Ankur Patil
+    Copyright &copy; 2023 | Ankur Patil
     </p>
     </div>
     </>
