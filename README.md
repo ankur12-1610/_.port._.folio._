@@ -53,4 +53,4 @@ $ npm run format
 ```
 
 ## Using this repo 🚨
-Feel free to clone and make your portoflio :)
+Feel free to clone and make your own portoflio :)
